@@ -117,7 +117,7 @@ class ApiCrudActivityLogger
             return 'employee';
         }
 
-        if (str_contains($path, 'admin-head/attendance') || str_contains($path, '/leaves')) {
+        if (str_contains($path, 'admin/attendance') || str_contains($path, '/leaves')) {
             return 'attendance';
         }
 

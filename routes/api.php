@@ -120,11 +120,11 @@ Route::post('/office-shift-schedules', [OfficeShiftScheduleController::class, 'u
 
 // Tardiness API Routes
 use App\Http\Controllers\Api\TardinessEntryController;
-Route::get('/admin-head/attendance/tardiness', [TardinessEntryController::class, 'index']);
-Route::post('/admin-head/attendance/tardiness', [TardinessEntryController::class, 'store']);
-Route::patch('/admin-head/attendance/tardiness/{id}', [TardinessEntryController::class, 'update']);
-Route::get('/admin-head/attendance/tardiness/years', [TardinessEntryController::class, 'years']);
-Route::delete('/admin-head/attendance/tardiness/{id}', [TardinessEntryController::class, 'destroy']);
+Route::get('/admin/attendance/tardiness', [TardinessEntryController::class, 'index']);
+Route::post('/admin/attendance/tardiness', [TardinessEntryController::class, 'store']);
+Route::patch('/admin/attendance/tardiness/{id}', [TardinessEntryController::class, 'update']);
+Route::get('/admin/attendance/tardiness/years', [TardinessEntryController::class, 'years']);
+Route::delete('/admin/attendance/tardiness/{id}', [TardinessEntryController::class, 'destroy']);
 
 
 // Leave Routes
